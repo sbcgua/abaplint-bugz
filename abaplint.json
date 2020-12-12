@@ -1,0 +1,131 @@
+{
+  "global": {
+    "files": "/src/**/*.*",
+    "skipGeneratedGatewayClasses": true,
+    "skipGeneratedPersistentClasses": true,
+    "skipGeneratedFunctionGroups": true
+  },
+  "dependencies": [],
+  "syntax": {
+    "errorNamespace": "^(Z|Y|LT?CL_|TY_|LIF_|.*EDE)",
+    "version": "v702",
+    "globalMacros": []
+  },
+  "rules": {
+    "class_attribute_names": {
+      "ignoreExceptions": true,
+      "statics": "^G.?_.*$",
+      "instance": "^M.?_.*$",
+      "constants": "^C.?_.*$",
+      "ignoreLocal": false,
+      "ignoreInterfaces": false,
+      "exclude": [
+        "test_base.*\\.abap"
+      ]
+    },
+    "colon_missing_space": true,
+    "contains_tab": true,
+    "description_empty": true,
+    "empty_statement": {
+      "exclude": [
+        "test_base.*\\.abap"
+      ]
+    },
+    "exit_or_check": true,
+    "exporting": true,
+    "functional_writing": {
+      "exclude": [],
+      "ignoreExceptions": true
+    },
+    "global_class": true,
+    "identical_form_names": true,
+    "indentation": {
+      "alignTryCatch": true,
+      "globalClassSkipFirst": false,
+      "ignoreGlobalClassDefinition": false,
+      "ignoreGlobalInterface": true,
+      "exclude": [
+        "./src/vchasno/zede_vchasno_sel.prog.abap"
+      ],
+      "ignoreExceptions": true
+    },
+    "inline_data_old_versions": true,
+    "keyword_case": {
+      "style": "lower",
+      "ignoreExceptions": true,
+      "ignoreGlobalClassBoundaries": true,
+      "ignoreGlobalClassDefinition": false,
+      "ignoreFunctionModuleName": false,
+      "ignoreGlobalInterface": false,
+      "ignoreLowerClassImplmentationStatement": false,
+      "ignoreKeywords": []
+    },
+    "line_length": {
+      "length": 140
+    },
+    "line_only_punc": {
+      "exclude": [],
+      "ignoreExceptions": true
+    },
+    "local_class_naming": {
+      "exclude": [],
+      "local": "^LCL_.*$",
+      "test": "^LTCL_.*$",
+      "exception": "^LCX_.*$"
+    },
+    "max_one_statement": {
+      "exclude": [
+        "test_base.*\\.abap",
+        "testclasses\\.abap$"
+      ]
+    },
+    "method_length": {
+      "exclude": [],
+      "statements": 130,
+      "ignoreTestClasses": true,
+      "errorWhenEmpty": false
+    },
+    "method_parameter_names": {
+      "ignoreExceptions": true,
+      "importing": "^I.?_.*$",
+      "returning": "^R.?_.*$",
+      "changing": "^C.?_.*$",
+      "exporting": "^E.?_.*$",
+      "ignoreNames": [],
+      "exclude": [
+        "test_base.*\\.abap"
+      ]
+    },
+    "mix_returning": true,
+    "nesting": {
+      "exclude": [],
+      "depth": 5
+    },
+    "obsolete_statement": {
+      "exclude": [],
+      "refresh": true,
+      "compute": true,
+      "add": false,
+      "subtract": false,
+      "multiply": true,
+      "move": true,
+      "divide": true,
+      "requested": true,
+      "occurs": true,
+      "setExtended": true,
+      "withHeaderLine": true,
+      "fieldSymbolStructure": false,
+      "load": false,
+      "typePools": true
+    },
+    "parser_error": true,
+    "sequential_blank": {
+      "exclude": [],
+      "lines": 4
+    },
+    "space_before_colon": true,
+    "start_at_tab": true,
+    "whitespace_end": true,
+    "uncaught_exception": true
+  }
+}
