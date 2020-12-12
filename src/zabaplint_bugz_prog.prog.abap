@@ -1,5 +1,7 @@
 report zabaplint_bugz_prog.
 
+include zabaplint_bugz_app.
+
 interface lif_me.
   methods with_ex raising zcx_abaplint_bugz.
   methods without_ex.
@@ -18,8 +20,6 @@ class lcl_abaplint_bugz_ex definition
     methods inst_with_ex raising zcx_abaplint_bugz.
     methods inst_without_ex.
 endclass.
-
-
 
 class lcl_abaplint_bugz_ex implementation.
 
